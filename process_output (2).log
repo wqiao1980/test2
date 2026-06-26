@@ -1,0 +1,461 @@
+[2026-06-26T03:40:56Z]: Launching # do not remove the next line
+for host in $(cat ${HOME}/machinefile); do host2=$(ssh ${host} hostname); sed -i "s/$host/$host2/" ${HOME}/abaqus_v6.env; done
+abaqus  job=viv_pipe_cfd_standalone.inp cpus=8 scratch=$PWD/tmp interactive, Working dir: /enc/wqiao/work/shared.  Process output follows:
+[2026-06-26T03:41:07Z]: Abaqus Warning: The .inp or .sim extension has been removed from the job identifier
+[2026-06-26T03:41:08Z]: Abaqus JOB viv_pipe_cfd_standalone
+[2026-06-26T03:41:08Z]: Abaqus 6.14-2
+[2026-06-26T03:41:20Z]: Abaqus License Manager checked out the following licenses:
+[2026-06-26T03:41:20Z]: Abaqus/CFD checked out 12 tokens from Flexnet server 10.16.242.7.
+[2026-06-26T03:41:20Z]: <337 out of 780 licenses remain available>.
+[2026-06-26T03:41:20Z]: Begin CFD Preprocessor
+[2026-06-26T03:41:20Z]: Fri 26 Jun 2026 03:41:20 AM UTC
+[2026-06-26T03:41:20Z]: Run SMACfdInpSim
+[2026-06-26T03:41:21Z]: Fri 26 Jun 2026 03:41:21 AM UTC
+[2026-06-26T03:41:21Z]: End CFD Preprocessor
+[2026-06-26T03:41:21Z]: Begin Abaqus/CFD Analysis
+[2026-06-26T03:41:21Z]: Fri 26 Jun 2026 03:41:21 AM UTC
+[2026-06-26T03:41:21Z]: Run SMACfdMain
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]:  ***************************************************************************
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]:  AAAAA  bb                                            /  CCCCC  FFFFFFF DDDDDD  
+[2026-06-26T03:41:25Z]: AA   AA bb                                           /  CC   CC FF      DD   DD 
+[2026-06-26T03:41:25Z]: AA   AA bb       aaaaa   qqqqq  uu   uu  ssssss     /   CC      FF      DD   DD 
+[2026-06-26T03:41:25Z]: AAAAAAA bbbbbb  a    aa qq   qq uu   uu  s         /    CC      FFFFF   DD   DD 
+[2026-06-26T03:41:25Z]: AA   AA bb   bb  aaaaaa qq   qq uu   uu  ssssss   /     CC      FF      DD   DD 
+[2026-06-26T03:41:25Z]: AA   AA bb   bb aaa  aa  qqqqqq uu   uu       s  /      CC   CC FF      DD   DD 
+[2026-06-26T03:41:25Z]: AA   AA bbbbbb   aaaaaa      qq  uuuuu   ssssss /        CCCCC  FF      DDDDDD  
+[2026-06-26T03:41:25Z]:                              qq                                                 
+[2026-06-26T03:41:25Z]:                                                                                 
+[2026-06-26T03:41:25Z]:                                                                                 
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]: AbqbAAAAqbqbAAqbAAqAqAqAAAqAAAqAAAAqAbbAqAAAqAAAAAqAbbbAqAqAqbAAbAAbAAqAAAAAqAAb
+[2026-06-26T03:41:25Z]: qaFqFqqqqaAqAqFAaqAqAaqFAFFaaaqqAaqFqFqaFFqFFFaqaaFFqFFaaaFaaFFaaaFqFaFaqqaFaqaF
+[2026-06-26T03:41:25Z]: uCuCsCsuuCussCuussssCCCCusCsCssCusssuCsCusuCuCsssCusCsuCuCCusCCsuCussssCCsuCssuC
+[2026-06-26T03:41:25Z]: usssussssuCsCsusCssuuuCuCuuuCsCuCusCCssCsCCCsssCCuCsCsCsCusssususssaCCsCCssususs
+[2026-06-26T03:41:25Z]: suususssussCCCuCCuuuuCuCsCuCssCsussssssCCuuCuCCusssCsCsCsCuCusassuaCssssuCuCuCCC
+[2026-06-26T03:41:25Z]: CCusCCCCCsCsuussCCsCsCsuCsuCCuusususssCuCuuCsusussCuuCCC+++++CCCCCsusCCuuusssCC/
+[2026-06-26T03:41:25Z]: ussCussuuCuuCuuCsusCCusCuusCsuusussCssCsaCsssuaCsCCCsC+/+//-////+CCCCssua+sC++//
+[2026-06-26T03:41:25Z]: CCCCCsuCsussCuuCCuCsusCusuuussusuC+////+C+CsCsusCsCC+///-/--------//CssCsC++//-/
+[2026-06-26T03:41:25Z]: CCusssuuusssusuCuCssCCusuCusas+////---///+CsCCssuC+//----///////---//+CCsC+/---/
+[2026-06-26T03:41:25Z]: uuCaCsuuusussauusaCauCssCasu//-----/-/-/--/+CssC++//---///////////-/-//C+C/--///
+[2026-06-26T03:41:25Z]: ssuuuqAFAFquqFauauquuCCsaCC+/---/////////-//++s+C//-/-/////////////---//+//-////
+[2026-06-26T03:41:25Z]: sCaqbaCsAbus++/////Csuuuu+/--///-/////////--/+++//-//////////////////-////-/////
+[2026-06-26T03:41:25Z]: suAa     -+--.-----/+aus/---///-/-/////////-//+//--//////---/////////---////////
+[2026-06-26T03:41:25Z]: uuA       ---/-//.//-CC+-//////--/ Abaqus/CFD //-//////////-////////////-///////
+[2026-06-26T03:41:25Z]: uub       --./----////////--///-/+/--////////-/--////////-----//////////////////
+[2026-06-26T03:41:25Z]: uuAq     /+///C+/--/////---///-/+s++---/////////////////-////--/////////////////
+[2026-06-26T03:41:25Z]: CsuqbqaqbAAaFFFaa//--////////-/+uCsC+---///////////////--///+-/-////////////////
+[2026-06-26T03:41:25Z]: suCuuqqAauaaaasuuqu+//-------/+CCusCC///---///////////--/++++/---///////////////
+[2026-06-26T03:41:25Z]: CCCsuusCsCuCasauauuFaus/++++CCsuasuuCC+//---/-///////--/+CCCC+/---//////////////
+[2026-06-26T03:41:25Z]: sCssuCssCsCussssCuuusuuusuuauassCsuuss+++//------/---//+CssuCC+//--////////////-
+[2026-06-26T03:41:25Z]: usCsCsuCuCssuuuCusuCuCssusssussCusussCsC+/+////-/-//++C+CCCCuCs++//---/-////----
+[2026-06-26T03:41:25Z]: uussuCCuCuCCssusCCsuCCssCsCssuCssuCsCuCsCsCsCC+C+C+CusCCsaCusCCCC+////-------//+
+[2026-06-26T03:41:25Z]: sCussCCCssusususussCsCuCsCuCCCuuusuusCCsssssCsuCCsasusasuuuCCsuCsCC++//////+C+CC
+[2026-06-26T03:41:25Z]: CuCuCuuCCsCusuCusususussssuCsCCsCCsssussuauCsuuussuusuCussssCCCusCCsCCCCsCCsCsCa
+[2026-06-26T03:41:25Z]: sCsssssCuCsCusussuCCCsCsuuCCuCssCCCsCsCuCuusuCsCuCussCsusussCsauuCuCCssuuCuusCuu
+[2026-06-26T03:41:25Z]: suCCCussCssssusCCuuussuCussuCuCssuCCCussusCusCsCCsuuCuCuCuCsssCssuusCssssuCaCCCC
+[2026-06-26T03:41:25Z]: FAaqFqqAqqFqAFqqAqqAFAqqqqqqAAqAqFqqFFaqaqqFaqaqaAqaaqaaqqqqaAFqFAqaaAFaqAaaFaFA
+[2026-06-26T03:41:25Z]: AaqFqaAuAqaqaqqaqFqaqqqaFFqFaqaaaaqFaqaaqFaaaaaaquauquauquqqqaquaaqaaaqaaFqaqqFF
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]:    Code Version: Abaqus/CFD 6.14-2
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]:  ***************************************************************************
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]:    Message Passing System Initialized
+[2026-06-26T03:41:25Z]:    Number of Processors   : 8
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]:    Date & Time    : Fri Jun 26 03:41:25 2026
+[2026-06-26T03:41:25Z]:    Executable     : /program/abaqus-6.14-2/6.14-2/code/bin/SMACfdMain
+[2026-06-26T03:41:25Z]: 
+[2026-06-26T03:41:25Z]:    Mesh      File : /enc/wqiao/work/shared/viv_pipe_cfd_standalone.sim
+[2026-06-26T03:41:25Z]:    Control   File : /enc/wqiao/work/shared/viv_pipe_cfd_standalone.sim
+[2026-06-26T03:41:25Z]:    Output    File : /enc/wqiao/work/shared/viv_pipe_cfd_standalone.dat
+[2026-06-26T03:41:25Z]:    Plot      File : /enc/wqiao/work/shared/viv_pipe_cfd_standalone.odb
+[2026-06-26T03:41:25Z]:    History   File : /enc/wqiao/work/shared/viv_pipe_cfd_standalone.odb
+[2026-06-26T03:41:25Z]:    Global    File : /enc/wqiao/work/shared/viv_pipe_cfd_standalone.sta
+[2026-06-26T03:41:25Z]:    Dump      File : /enc/wqiao/work/shared/viv_pipe_cfd_standalone.sim
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    M E S H   S T A T I S T I C S
+[2026-06-26T03:41:26Z]:    =============================
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Pipeline VIV - CFD domain (benchmark, pre-generated)
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Problem dimension ....................................... 3
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of nodes ......................................... 52500
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of elements ...................................... 287520
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of tet4 elements ................................. 287520
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of element classes ............................... 1
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of materials ..................................... 1
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of node sets ..................................... 1
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of element sets .................................. 2
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of surfaces ...................................... 4
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    M A T E R I A L  M O D E L S
+[2026-06-26T03:41:26Z]:    ============================
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of input materials ............................... 1
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Material ID ............................................. 0
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:     Density
+[2026-06-26T03:41:26Z]:         Uniform density .................................... 1025
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:     Newtonian Viscosity
+[2026-06-26T03:41:26Z]:         Viscosity .......................................... 0.00119
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    L O A D  C U R V E  D A T A
+[2026-06-26T03:41:26Z]:    ===========================
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of load curves ................................... 0
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    F U N C T I O N  T A B L E S
+[2026-06-26T03:41:26Z]:    ============================
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    Number of function tables ............................... 0
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    * * * * *  S T E P : 1  * * * * *
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]:    ... Solving an Incompressible Navier-Stokes Problem ...
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:26Z]: 
+[2026-06-26T03:41:27Z]:    C O N T R O L  O P T I O N S
+[2026-06-26T03:41:27Z]:    ============================
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:     Deformable mesh is inactive
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:     Mesh mapper controls for surface to surface mapping
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Using absolute value to control the tolerance in contact search  1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:     Output options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Print level ....................................... PARAMS_ONLY
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Plot file type .................................... SERIAL
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Print interval .................................... 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Plot interval ..................................... 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time-history interval ............................. 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Interval for screen reports ....................... 10
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:     Cell-Centered Edge-Based Incompressible Navier-Stokes
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time integration method ........................... THETA
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Energy equation and dependent variable ............ NOENERGY
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Number of initial pressure solves ................. 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Pressure solve interval check ..................... 10
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Divergence tolerance .............................. 0.001
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Divergence tolerance for initial projection ....... 1e-10
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time weight for diffusion ......................... 0.5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time weight for BTD ............................... 0.5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time weight for advection ......................... 0.5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time weight for BC's .............................. 0.5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time weight for projection pressures .............. 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Scale factor for FSI penalty ...................... 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Solid-fluid density ratio. Large value is assumed.  0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Under-relaxation factor ........................... 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Edge gradient formulation
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Gradient Formulation
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Gradient type ................................. HYBRIDLS
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Turbulence model
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         k-omega SST model
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Buoyancy correction for TKE equation .......... 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Buoyancy correction for Omega equation ........ 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             A1 ............................................ 0.31
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Beta* ......................................... 0.09
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Beta1 ......................................... 0.075
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Beta2 ......................................... 0.0828
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Sigma_k1 ...................................... 0.85
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Sigma_k2 ...................................... 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Sigma_omega1 .................................. 0.5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Sigma_omega2 .................................. 0.856
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Kappa ......................................... 0.41
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Turbulent Prandtl number ...................... 0.8889
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Positivity rate for the TKE ................... 0.2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Minimum value for the TKE ..................... 1e-14
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Positivity rate for the OMEGA ................. 0.2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Minimum value for OMEGA ....................... 1e-14
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Time averaging
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Time averaging options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Statistics level type ......................... NO_STATS
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Time to start collecting statistics ........... 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Duration for averaging statistics ............. 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Time interval for averaging statistics ........ 0.1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Incrementation control
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Fixed incrementation options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Start increment number ........................ 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Start time .................................... 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Termination time .............................. 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Time step ..................................... 0.002
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       PPE linear solver
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Algebraic Multigrid solver options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Iteration limit ............................... 250
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Interval to check convergence ................. 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Write convergence information ................. 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Write diagonostic information ................. 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Smoother type for coarse grid solver .......... ICC
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Number of pre-smoothing sweeps on all levels .. 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Number of post-smoothing sweeps on all levels . 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Solver type for krylov space solver ........... CG
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Cycle type .................................... V
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Maximum number of levels ...................... 10
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Maximum size of coarsest level ................ 1000
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Linear convergence limit ...................... 1e-05
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Momentum equation linear solver
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Diagonally-scaled FGMRES solver options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Iteration limit ............................... 50
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Interval to check convergence ................. 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Write convergence information ................. 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Write diagonostic information ................. 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Number of restart vectors ..................... 15
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Linear convergence limit ...................... 1e-05
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Energy transport equation linear solver
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Equation solver for this transport is inactive
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Turbulence transport equation linear solver
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Diagonally-scaled FGMRES solver options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Iteration limit ............................... 50
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Interval to check convergence ................. 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Write convergence information ................. 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Write diagonostic information ................. 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Number of restart vectors ..................... 15
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:             Linear convergence limit ...................... 1e-05
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:     Physics Coupling options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Coupling type ..................................... NO_COUPLING
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:     Restart options
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Write restart file ................................ 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Restart write frequency ........................... 0
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:         Number of restart write intervals ................. 1
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    T I M E  I N T E G R A T O R  O P T I O N S
+[2026-06-26T03:41:27Z]:    ===========================================
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Theta-method
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    D I R I C H L E T  B O U N D A R Y  C O N D I T I O N S
+[2026-06-26T03:41:27Z]:    =======================================================
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Surface ID   Amplitude   Magnitude   User  Variable
+[2026-06-26T03:41:27Z]:    ==========  ==========  ===========  ====  ==================
+[2026-06-26T03:41:27Z]:             0          -1  5.0000e-01    No   X-velocity
+[2026-06-26T03:41:27Z]:             0          -1  0.0000e+00    No   Y-velocity
+[2026-06-26T03:41:27Z]:             0          -1  0.0000e+00    No   Z-velocity
+[2026-06-26T03:41:27Z]:             1          -1  0.0000e+00    No   Pressure
+[2026-06-26T03:41:27Z]:             2          -1  0.0000e+00    No   Normal Wall Distance
+[2026-06-26T03:41:27Z]:             2          -1  0.0000e+00    No   X-velocity
+[2026-06-26T03:41:27Z]:             2          -1  0.0000e+00    No   Y-velocity
+[2026-06-26T03:41:27Z]:             2          -1  0.0000e+00    No   Z-velocity
+[2026-06-26T03:41:27Z]:             3          -1  0.0000e+00    No   Normal Wall Distance
+[2026-06-26T03:41:27Z]:             3          -1  0.0000e+00    No   X-velocity
+[2026-06-26T03:41:27Z]:             3          -1  0.0000e+00    No   Y-velocity
+[2026-06-26T03:41:27Z]:             3          -1  0.0000e+00    No   Z-velocity
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    P L O T  V A R I A B L E S  R E Q U E S T E D
+[2026-06-26T03:41:27Z]:    =============================================
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:     Variable   Centering   Clock Type    Clock Setting
+[2026-06-26T03:41:27Z]:    ==========  =========  =============  =============
+[2026-06-26T03:41:27Z]:             P    Node       Time Interval           0.01
+[2026-06-26T03:41:27Z]:             V    Node       Time Interval           0.01
+[2026-06-26T03:41:27Z]:         COORD    Node       Time Interval           0.01
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    D U A L - E D G E   S U M M A R Y
+[2026-06-26T03:41:27Z]:    =================================
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Number of edges found in the mesh ....................... 593752
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:        Number of internal edges ............................ 556328
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:        Number of external edges ............................ 37424
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    L O A D  B A L A N C E  S T A T I S T I C S
+[2026-06-26T03:41:27Z]:    ===========================================
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Node/Element Distribution
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of elements on a processor ............ 34787
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of elements on a processor ............ 36212
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of nodes on a processor ............... 6908
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of nodes on a processor ............... 7334
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Nodal Communicator
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of processors in communicator ......... 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of processors in communicator ......... 5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of nodes for communication ............ 801
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of nodes for communication ............ 1783
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Element Communicator
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of processors in communicator ......... 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of processors in communicator ......... 5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of elements to send ................... 3998
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of elements to send ................... 8676
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of elements to receive ................ 4040
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of elements to receive ................ 8637
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Edge Communicator
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of processors in communicator ......... 2
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of processors in communicator ......... 5
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Minimum number of edges for communication ............ 1438
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:       Maximum number of edges for communication ............ 3172
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    ***WARNING: No initial density has been prescribed. The default density from
+[2026-06-26T03:41:27Z]:                the material definition will be used
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    I N I T I A L  D I V E R G E N C E  S U M M A R Y
+[2026-06-26T03:41:27Z]:    =================================================
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:27Z]:    Initial divergence ...................................... 3.89179e-06
+[2026-06-26T03:41:27Z]: 
+[2026-06-26T03:41:28Z]:    Projected divergence .................................... 1.34838e-06
+[2026-06-26T03:41:28Z]: 
+[2026-06-26T03:41:28Z]:    Net volumetric flux balance ............................. -7.48847e-08
+[2026-06-26T03:41:28Z]: 
+[2026-06-26T03:41:28Z]: 
+[2026-06-26T03:41:28Z]:    ***ERROR: The initial TURBKE field for k-omega is required.
+[2026-06-26T03:41:28Z]: MPI Application rank 1 killed before MPI_Finalize() with signal 11
+[2026-06-26T03:41:28Z]: Fri 26 Jun 2026 03:41:28 AM UTC
+[2026-06-26T03:41:28Z]: Abaqus Error: Abaqus/CFD Analysis exited with an error.
+[2026-06-26T03:41:28Z]: Abaqus/Analysis exited with errors
+[2026-06-26T03:41:28Z]: Exited with code 1
+[2026-06-26T03:41:28Z]: 
