@@ -1,0 +1,145 @@
+[2026-06-21T04:20:58Z]: Launching # do not remove the next line
+for host in $(cat ${HOME}/machinefile); do host2=$(ssh ${host} hostname); sed -i "s/$host/$host2/" ${HOME}/abaqus_v6.env; done
+/bin/mkdir -p tmp
+export abaqus_scratch=$PWD/tmp
+cp -f viv_pipe_cfd_standalone.inp ./viv_pipe_cfd.inp
+abaqus  job=viv_pipe_cfd.inp cpus=8 scratch=$PWD/tmp interactive, Working dir: /enc/wqiao/work/shared.  Process output follows:
+[2026-06-21T04:21:06Z]: Abaqus Warning: The .inp or .sim extension has been removed from the job identifier
+[2026-06-21T04:21:06Z]: Abaqus JOB viv_pipe_cfd
+[2026-06-21T04:21:06Z]: Abaqus 6.14-2
+[2026-06-21T04:21:18Z]: Abaqus License Manager checked out the following licenses:
+[2026-06-21T04:21:18Z]: Abaqus/CFD checked out 12 tokens from Flexnet server 10.16.242.7.
+[2026-06-21T04:21:18Z]: <300 out of 780 licenses remain available>.
+[2026-06-21T04:21:18Z]: Begin CFD Preprocessor
+[2026-06-21T04:21:18Z]: Sun 21 Jun 2026 04:21:18 AM UTC
+[2026-06-21T04:21:18Z]: Run SMACfdInpSim
+[2026-06-21T04:21:19Z]: Sun 21 Jun 2026 04:21:19 AM UTC
+[2026-06-21T04:21:19Z]: End CFD Preprocessor
+[2026-06-21T04:21:19Z]: Begin Abaqus/CFD Analysis
+[2026-06-21T04:21:19Z]: Sun 21 Jun 2026 04:21:19 AM UTC
+[2026-06-21T04:21:19Z]: Run SMACfdMain
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]:  ***************************************************************************
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]:  AAAAA  bb                                            /  CCCCC  FFFFFFF DDDDDD  
+[2026-06-21T04:21:24Z]: AA   AA bb                                           /  CC   CC FF      DD   DD 
+[2026-06-21T04:21:24Z]: AA   AA bb       aaaaa   qqqqq  uu   uu  ssssss     /   CC      FF      DD   DD 
+[2026-06-21T04:21:24Z]: AAAAAAA bbbbbb  a    aa qq   qq uu   uu  s         /    CC      FFFFF   DD   DD 
+[2026-06-21T04:21:24Z]: AA   AA bb   bb  aaaaaa qq   qq uu   uu  ssssss   /     CC      FF      DD   DD 
+[2026-06-21T04:21:24Z]: AA   AA bb   bb aaa  aa  qqqqqq uu   uu       s  /      CC   CC FF      DD   DD 
+[2026-06-21T04:21:24Z]: AA   AA bbbbbb   aaaaaa      qq  uuuuu   ssssss /        CCCCC  FF      DDDDDD  
+[2026-06-21T04:21:24Z]:                              qq                                                 
+[2026-06-21T04:21:24Z]:                                                                                 
+[2026-06-21T04:21:24Z]:                                                                                 
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]: AbqbAAAAqbqbAAqbAAqAqAqAAAqAAAqAAAAqAbbAqAAAqAAAAAqAbbbAqAqAqbAAbAAbAAqAAAAAqAAb
+[2026-06-21T04:21:24Z]: qaFqFqqqqaAqAqFAaqAqAaqFAFFaaaqqAaqFqFqaFFqFFFaqaaFFqFFaaaFaaFFaaaFqFaFaqqaFaqaF
+[2026-06-21T04:21:24Z]: uCuCsCsuuCussCuussssCCCCusCsCssCusssuCsCusuCuCsssCusCsuCuCCusCCsuCussssCCsuCssuC
+[2026-06-21T04:21:24Z]: usssussssuCsCsusCssuuuCuCuuuCsCuCusCCssCsCCCsssCCuCsCsCsCusssususssaCCsCCssususs
+[2026-06-21T04:21:24Z]: suususssussCCCuCCuuuuCuCsCuCssCsussssssCCuuCuCCusssCsCsCsCuCusassuaCssssuCuCuCCC
+[2026-06-21T04:21:24Z]: CCusCCCCCsCsuussCCsCsCsuCsuCCuusususssCuCuuCsusussCuuCCC+++++CCCCCsusCCuuusssCC/
+[2026-06-21T04:21:24Z]: ussCussuuCuuCuuCsusCCusCuusCsuusussCssCsaCsssuaCsCCCsC+/+//-////+CCCCssua+sC++//
+[2026-06-21T04:21:24Z]: CCCCCsuCsussCuuCCuCsusCusuuussusuC+////+C+CsCsusCsCC+///-/--------//CssCsC++//-/
+[2026-06-21T04:21:24Z]: CCusssuuusssusuCuCssCCusuCusas+////---///+CsCCssuC+//----///////---//+CCsC+/---/
+[2026-06-21T04:21:24Z]: uuCaCsuuusussauusaCauCssCasu//-----/-/-/--/+CssC++//---///////////-/-//C+C/--///
+[2026-06-21T04:21:24Z]: ssuuuqAFAFquqFauauquuCCsaCC+/---/////////-//++s+C//-/-/////////////---//+//-////
+[2026-06-21T04:21:24Z]: sCaqbaCsAbus++/////Csuuuu+/--///-/////////--/+++//-//////////////////-////-/////
+[2026-06-21T04:21:24Z]: suAa     -+--.-----/+aus/---///-/-/////////-//+//--//////---/////////---////////
+[2026-06-21T04:21:24Z]: uuA       ---/-//.//-CC+-//////--/ Abaqus/CFD //-//////////-////////////-///////
+[2026-06-21T04:21:24Z]: uub       --./----////////--///-/+/--////////-/--////////-----//////////////////
+[2026-06-21T04:21:24Z]: uuAq     /+///C+/--/////---///-/+s++---/////////////////-////--/////////////////
+[2026-06-21T04:21:24Z]: CsuqbqaqbAAaFFFaa//--////////-/+uCsC+---///////////////--///+-/-////////////////
+[2026-06-21T04:21:24Z]: suCuuqqAauaaaasuuqu+//-------/+CCusCC///---///////////--/++++/---///////////////
+[2026-06-21T04:21:24Z]: CCCsuusCsCuCasauauuFaus/++++CCsuasuuCC+//---/-///////--/+CCCC+/---//////////////
+[2026-06-21T04:21:24Z]: sCssuCssCsCussssCuuusuuusuuauassCsuuss+++//------/---//+CssuCC+//--////////////-
+[2026-06-21T04:21:24Z]: usCsCsuCuCssuuuCusuCuCssusssussCusussCsC+/+////-/-//++C+CCCCuCs++//---/-////----
+[2026-06-21T04:21:24Z]: uussuCCuCuCCssusCCsuCCssCsCssuCssuCsCuCsCsCsCC+C+C+CusCCsaCusCCCC+////-------//+
+[2026-06-21T04:21:24Z]: sCussCCCssusususussCsCuCsCuCCCuuusuusCCsssssCsuCCsasusasuuuCCsuCsCC++//////+C+CC
+[2026-06-21T04:21:24Z]: CuCuCuuCCsCusuCusususussssuCsCCsCCsssussuauCsuuussuusuCussssCCCusCCsCCCCsCCsCsCa
+[2026-06-21T04:21:24Z]: sCsssssCuCsCusussuCCCsCsuuCCuCssCCCsCsCuCuusuCsCuCussCsusussCsauuCuCCssuuCuusCuu
+[2026-06-21T04:21:24Z]: suCCCussCssssusCCuuussuCussuCuCssuCCCussusCusCsCCsuuCuCuCuCsssCssuusCssssuCaCCCC
+[2026-06-21T04:21:24Z]: FAaqFqqAqqFqAFqqAqqAFAqqqqqqAAqAqFqqFFaqaqqFaqaqaAqaaqaaqqqqaAFqFAqaaAFaqAaaFaFA
+[2026-06-21T04:21:24Z]: AaqFqaAuAqaqaqqaqFqaqqqaFFqFaqaaaaqFaqaaqFaaaaaaquauquauquqqqaquaaqaaaqaaFqaqqFF
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]:    Code Version: Abaqus/CFD 6.14-2
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]:  ***************************************************************************
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]:    Message Passing System Initialized
+[2026-06-21T04:21:24Z]:    Number of Processors   : 8
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]:    Date & Time    : Sun Jun 21 04:21:24 2026
+[2026-06-21T04:21:24Z]:    Executable     : /program/abaqus-6.14-2/6.14-2/code/bin/SMACfdMain
+[2026-06-21T04:21:24Z]: 
+[2026-06-21T04:21:24Z]:    Mesh      File : /enc/wqiao/work/shared/viv_pipe_cfd.sim
+[2026-06-21T04:21:24Z]:    Control   File : /enc/wqiao/work/shared/viv_pipe_cfd.sim
+[2026-06-21T04:21:24Z]:    Output    File : /enc/wqiao/work/shared/viv_pipe_cfd.dat
+[2026-06-21T04:21:24Z]:    Plot      File : /enc/wqiao/work/shared/viv_pipe_cfd.odb
+[2026-06-21T04:21:24Z]:    History   File : /enc/wqiao/work/shared/viv_pipe_cfd.odb
+[2026-06-21T04:21:24Z]:    Global    File : /enc/wqiao/work/shared/viv_pipe_cfd.sta
+[2026-06-21T04:21:24Z]:    Dump      File : /enc/wqiao/work/shared/viv_pipe_cfd.sim
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    M E S H   S T A T I S T I C S
+[2026-06-21T04:21:25Z]:    =============================
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Pipeline VIV - CFD domain (benchmark, pre-generated)
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Problem dimension ....................................... 3
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of nodes ......................................... 52500
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of elements ...................................... 239600
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of tet4 elements ................................. 239600
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of element classes ............................... 1
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of materials ..................................... 1
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of node sets ..................................... 1
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of element sets .................................. 2
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of surfaces ...................................... 4
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    M A T E R I A L  M O D E L S
+[2026-06-21T04:21:25Z]:    ============================
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of input materials ............................... 1
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Material ID ............................................. 0
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:     Density
+[2026-06-21T04:21:25Z]:         Uniform density .................................... 1025
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:     Newtonian Viscosity
+[2026-06-21T04:21:25Z]:         Viscosity .......................................... 0.00119
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    L O A D  C U R V E  D A T A
+[2026-06-21T04:21:25Z]:    ===========================
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of load curves ................................... 0
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    F U N C T I O N  T A B L E S
+[2026-06-21T04:21:25Z]:    ============================
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    Number of function tables ............................... 0
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    * * * * *  S T E P : 1  * * * * *
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]:    ... Solving an Incompressible Navier-Stokes Problem ...
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:25Z]: 
+[2026-06-21T04:21:26Z]: MPI Application rank 2 killed before MPI_Finalize() with signal 11
+[2026-06-21T04:21:26Z]: Sun 21 Jun 2026 04:21:26 AM UTC
+[2026-06-21T04:21:26Z]: Abaqus Error: Abaqus/CFD Analysis exited with an error.
+[2026-06-21T04:21:26Z]: Abaqus/Analysis exited with errors
+[2026-06-21T04:21:26Z]: Exited with code 1
+[2026-06-21T04:21:26Z]: 
