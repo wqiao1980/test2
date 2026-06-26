@@ -1,0 +1,21 @@
+[2026-06-26T03:18:08Z]: Launching # do not remove the next line
+for host in $(cat ${HOME}/machinefile); do host2=$(ssh ${host} hostname); sed -i "s/$host/$host2/" ${HOME}/abaqus_v6.env; done
+abaqus  job=viv_pipe_cfd_standalone.inp cpus=8 scratch=$PWD/tmp interactive, Working dir: /enc/wqiao/work/shared.  Process output follows:
+[2026-06-26T03:18:18Z]: Abaqus Warning: The .inp or .sim extension has been removed from the job identifier
+[2026-06-26T03:18:20Z]: Abaqus JOB viv_pipe_cfd_standalone
+[2026-06-26T03:18:20Z]: Abaqus 6.14-2
+[2026-06-26T03:18:31Z]: Abaqus License Manager checked out the following licenses:
+[2026-06-26T03:18:31Z]: Abaqus/CFD checked out 12 tokens from Flexnet server 10.16.242.7.
+[2026-06-26T03:18:31Z]: <360 out of 780 licenses remain available>.
+[2026-06-26T03:18:31Z]: Begin CFD Preprocessor
+[2026-06-26T03:18:31Z]: Fri 26 Jun 2026 03:18:31 AM UTC
+[2026-06-26T03:18:31Z]: Run SMACfdInpSim
+[2026-06-26T03:18:32Z]: Error: in keyword *FLUIDBOUNDARY, file "viv_pipe_cfd_standalone.inp", line 357971: undefined surface: VELX
+[2026-06-26T03:18:32Z]: Error: in keyword *FLUIDBOUNDARY, file "viv_pipe_cfd_standalone.inp", line 357971: undefined surface: VELY
+[2026-06-26T03:18:32Z]: Error: in keyword *FLUIDBOUNDARY, file "viv_pipe_cfd_standalone.inp", line 357971: undefined surface: VELZ
+[2026-06-26T03:18:32Z]: Error: in keyword *FLUIDBOUNDARY, file "viv_pipe_cfd_standalone.inp", line 357975: undefined surface: P
+[2026-06-26T03:18:32Z]: Fri 26 Jun 2026 03:18:32 AM UTC
+[2026-06-26T03:18:32Z]: Abaqus Error: CFD Preprocessor exited with an error.
+[2026-06-26T03:18:32Z]: Abaqus/Analysis exited with errors
+[2026-06-26T03:18:33Z]: Exited with code 1
+[2026-06-26T03:18:33Z]: 
